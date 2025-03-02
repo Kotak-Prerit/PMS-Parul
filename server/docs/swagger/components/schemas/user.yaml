@@ -1,0 +1,27 @@
+type: object
+required:
+  - _id
+  - name
+  - email
+  - password
+properties:
+  _id:
+    description: "User's id"
+    type: string
+    example: 65e4decdd286b30065d54af9
+  name:
+    description: "User's name"
+    type: string
+    example: Clayton Santos
+  email:
+    description: "User's email"
+    type: string
+    example: vendor@gmail.com
+  password:
+    description: "User's password"
+    type: string
+    example: claytonsantos
+  token:
+    description: "User's token"
+    type: string
+    example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjRlNjlhYzFiZTFmNzBiNGVlOGQ2NCIsIm5hbWUiOiJDbGF5dG9uIFNhbnRvcyIsImVtYWlsIjoidmVuZG9yQGdtYWlsLmNvbSIsImlhdCI6MTczMDY1MDc1OSwiZXhwIjoxNzMwNjU0MzU5fQ.FUOY3CMOzmJ0wa3JZK8LSLH5L6hVDrDNuBhWr19v4tk

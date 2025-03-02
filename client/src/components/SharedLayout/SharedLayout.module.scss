@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  @include media(desktop) {
+    justify-content: start;
+    gap: 20px;
+  }
+}

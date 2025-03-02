@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.backgroundWrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../assets/images/white-round-pill.webp),
+    url(../../assets/images/elements.webp);
+  background-repeat: no-repeat;
+  background-position: 240px 160px, bottom 0px right 0px;
+  background-size: 179px 175px, 266px 263px;
+}
+
+@media (min-resolution: 192dpi) {
+  .backgroundWrapper {
+    background-image: url(../../assets/images/white-round-pill@2x.webp),
+      url(../../assets/images/elements@2x.webp);
+  }
+}
+
+@media (min-width: 768px) {
+  .backgroundWrapper {
+    width: 768px;
+    height: 1024px;
+    background-image: url(../../assets/images/white-round-pill-tab.webp),
+      url(../../assets/images/elements-tab.webp);
+    background-position: 448px 168px, bottom 0px right 0px;
+    background-size: 179px 175px, 266px 263px;
+  }
+}
+
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .backgroundWrapper {
+    background-image: url(../../assets/images/white-round-pill-tab@2x.webp),
+      url(../../assets/images/elements-tab@2x.webp);
+  }
+}
+
+@media (min-width: 1024px) {
+  .backgroundWrapper {
+    width: 100%;
+    height: 100vh;
+    background-position: 516px 190px, bottom 0px right 0px;
+    background-size: 179px 175px, 266px 263px;
+  }
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  gap: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-inline: 10%;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  color: var(--primary-text-color);
+}
+
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media (min-width: 1024px) {
+  .heroWrapper {
+    flex-direction: row;
+    gap: 150px;
+  }
+}
+
+.heroText {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.21429;
+  color: var(--primary-text-color);
+}
+
+@media (min-width: 768px) {
+  .heroText {
+    font-size: 54px;
+    line-height: 1.11111;
+    max-width: 614px;
+  }
+}
+
+.heroSpan {
+  color: var(--primary-accent-color);
+}

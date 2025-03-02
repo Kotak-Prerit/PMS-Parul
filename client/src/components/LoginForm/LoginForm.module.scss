@@ -1,0 +1,58 @@
+.form {
+  @include media(desktop) {
+    padding-top: 10px;
+  }
+}
+
+.passwordWrapper {
+  position: relative;
+
+  @include media(tablet) {
+    max-width: 323px;
+  }
+}
+
+.errorContainer {
+  min-height: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 18px;
+
+  @include media(tablet) {
+    min-height: 14px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 16px;
+  }
+}
+
+.error {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: $primary-error-color;
+
+  @include media(tablet) {
+    font-size: 12px;
+    line-height: 1.16667;
+  }
+}
+
+.btn {
+  margin-top: 22px;
+
+  @include media(tablet) {
+    max-width: 323px;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+
+  @include media(tablet) {
+    max-width: 323px;
+  }
+}

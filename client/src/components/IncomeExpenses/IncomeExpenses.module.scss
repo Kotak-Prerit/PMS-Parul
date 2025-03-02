@@ -1,0 +1,137 @@
+.table {
+  border: 1px solid $primary-grey-color;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top: none;
+  padding: 0 14px 0 14px;
+  background-color: $primary-white-color;
+
+  @include media(tablet) {
+    padding: 0 20px 0 20px;
+  }
+}
+
+.title {
+  border: 0px solid rgba(29, 30, 33, 0.08);
+  border-radius: 8px 8px 0 0;
+  width: 335px;
+  background-color: $primary-caption-bg-color;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  padding: 14px;
+  text-align: left;
+
+  @include media(tablet) {
+    padding: 20px;
+    width: 704px;
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+
+  @include media(desktop) {
+    width: 630px;
+    line-height: 1.33333;
+  }
+}
+
+.thead {
+  text-align: left;
+}
+
+.columnTitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: $primary-placeholder-color;
+  text-align: left;
+  padding: 14px 0 14px 0;
+
+  @include media(tablet) {
+    padding: 20px 0 20px 0;
+  }
+}
+
+.lastRow .td {
+  border-bottom: none;
+}
+
+.td {
+  padding: 14px 0 14px 0;
+  border-bottom: 1px solid $primary-grey-color;
+
+  @include media(tablet) {
+    padding: 20px 0 20px 0;
+  }
+}
+
+.type {
+  border-radius: 40px;
+  padding: 4px;
+  width: 80px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.05em;
+  text-align: center;
+
+  @include media(tablet) {
+    font-size: 14px;
+  }
+}
+
+.income {
+  color: $primary-accent-color;
+  background-color: rgba(89, 177, 122, 0.1);
+}
+
+.expense {
+  color: $primary-error-color;
+  background-color: rgba(232, 80, 80, 0.1);
+}
+
+.error {
+  background-color: rgba(29, 30, 33, 0.1);
+}
+
+.nameColumn {
+  padding: 0 28px 0 24px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+
+  @include media(tablet) {
+    font-size: 16px;
+    line-height: 1.125;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.amountColumn {
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+
+  @include media(tablet) {
+    padding-left: 20px;
+    text-align: right;
+  }
+
+  @include media(desktop) {
+  }
+}
+
+.incomeText {
+  color: $primary-accent-color;
+}
+
+.expenseText {
+  color: $primary-error-color;
+}
+
+.errorText {
+  text-decoration: line-through;
+}

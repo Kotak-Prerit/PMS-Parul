@@ -1,0 +1,69 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: Admin Dashboard app
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  description: >
+    This is a documentation of admin dashboard app
+tags:
+  - name: User
+    description: User operations.
+  - name: Dashboard
+    description: Dashboard operations.
+  - name: Orders
+    description: Orders operations.
+  - name: Products
+    description: Products operations.
+  - name: Suppliers
+    description: Suppliers operations.
+  - name: Customers
+    description: Customers operations.
+servers:
+  - url: https://admin-dashboard-back-n51a.onrender.com/api
+paths:
+  /user/login:
+    post:
+      $ref: ../docs/swagger/paths/user/login/post.yaml
+  /user/logout:
+    get:
+      $ref: ../docs/swagger/paths/user/logout/get.yaml
+  /user/user-info:
+    get:
+      $ref: ../docs/swagger/paths/user/user-info/get.yaml
+  /dashboard:
+    get:
+      $ref: ../docs/swagger/paths/dashboard/get.yaml
+  /orders:
+    get:
+      $ref: ../docs/swagger/paths/orders/get.yaml
+  /products:
+    get:
+      $ref: ../docs/swagger/paths/products/get.yaml
+    post:
+      $ref: ../docs/swagger/paths/products/post.yaml
+  /products/{id}:
+    put:
+      $ref: ../docs/swagger/paths/products/{id}/put.yaml
+    delete:
+      $ref: ../docs/swagger/paths/products/{id}/delete.yaml
+  /suppliers:
+    get:
+      $ref: ../docs/swagger/paths/suppliers/get.yaml
+    post:
+      $ref: ../docs/swagger/paths/suppliers/post.yaml
+  /suppliers/{id}:
+    put:
+      $ref: ../docs/swagger/paths/suppliers/{id}/put.yaml
+  /customers:
+    get:
+      $ref: ../docs/swagger/paths/customers/get.yaml
+  /customers/{id}:
+    get:
+      $ref: ../docs/swagger/paths/customers/{id}/get.yaml
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer

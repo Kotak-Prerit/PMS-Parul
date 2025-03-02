@@ -1,0 +1,6 @@
+.img {
+  @include media(tablet) {
+    width: 200px;
+    height: 40px;
+  }
+}
