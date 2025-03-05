@@ -1,4 +1,4 @@
 Login Credentials
 
-Email : vendor@gmail.com
+Email : vendor@gmail.com <br>
 pass : claytonsantos
